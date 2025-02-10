@@ -6,7 +6,7 @@ using log4net.Config;
 
 class Program
 {
-    private static readonly ILog log = LogManager.GetLogger(typeof(TcpServer));
+    public static readonly ILog log = LogManager.GetLogger(typeof(TcpServer));
     static void Main()
     {
         ConfigureLogging();

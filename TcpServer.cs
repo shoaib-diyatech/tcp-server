@@ -31,6 +31,7 @@ class TcpServer
         _listener = new TcpListener(IPAddress.Any, Port);
         _listener.Start();
         Console.WriteLine($"Server started on port {Port}");
+        Program.log.Info($"Server started on port {Port}");
 
         while (true)
         {
@@ -42,6 +43,7 @@ class TcpServer
     private static async Task HandleClientAsync(TcpClient client)
     {
         Console.WriteLine($"Client connected: {client.Client.RemoteEndPoint}");
+        Program.log.Info($"Client connected: {client.Client.RemoteEndPoint}");
         NetworkStream stream = client.GetStream();
         byte[] buffer = new byte[1024];
 
@@ -54,6 +56,7 @@ class TcpServer
 
                 string request = Encoding.UTF8.GetString(buffer, 0, bytesRead);
                 Console.WriteLine($"Received: {request}");
+                Program.log.Info($"Received: {request}");
 
                 string response = _requestHandler.ProcessRequest(request);
                 byte[] responseBytes = Encoding.UTF8.GetBytes(response);
@@ -63,11 +66,13 @@ class TcpServer
         catch (Exception ex)
         {
             Console.WriteLine($"Error: {ex.Message}");
+            Program.log.Error($"Error: {ex.Message}");
         }
         finally
         {
             client.Close();
             Console.WriteLine("Client disconnected.");
+            Program.log.Info("Client disconnected.");
         }
     }
 }
