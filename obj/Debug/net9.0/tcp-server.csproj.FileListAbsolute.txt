@@ -12,3 +12,12 @@ D:\Alachisoft work\tcp-server\obj\Debug\net9.0\refint\tcp-server.dll
 D:\Alachisoft work\tcp-server\obj\Debug\net9.0\tcp-server.pdb
 D:\Alachisoft work\tcp-server\obj\Debug\net9.0\tcp-server.genruntimeconfig.cache
 D:\Alachisoft work\tcp-server\obj\Debug\net9.0\ref\tcp-server.dll
+D:\Alachisoft work\tcp-server\obj\Debug\net9.0\tcp-server.sourcelink.json
+D:\Alachisoft work\tcp-server\bin\Debug\net9.0\tcp-server.dll.config
+D:\Alachisoft work\tcp-server\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+D:\Alachisoft work\tcp-server\bin\Debug\net9.0\System.Diagnostics.EventLog.dll
+D:\Alachisoft work\tcp-server\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+D:\Alachisoft work\tcp-server\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.Messages.dll
+D:\Alachisoft work\tcp-server\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.dll
+D:\Alachisoft work\tcp-server\obj\Debug\net9.0\tcp-server.csproj.AssemblyReference.cache
+D:\Alachisoft work\tcp-server\obj\Debug\net9.0\tcp-server.csproj.Up2Date

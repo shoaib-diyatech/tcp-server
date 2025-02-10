@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "jKLvpCsXnaw=",
+  "dgSpecHash": "4KhiqGQS0Kk=",
   "success": true,
   "projectFilePath": "D:\\Alachisoft work\\tcp-server\\tcp-server.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Shoaib_Khalid\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.1\\system.configuration.configurationmanager.9.0.1.nupkg.sha512",
+    "C:\\Users\\Shoaib_Khalid\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.1\\system.diagnostics.eventlog.9.0.1.nupkg.sha512",
+    "C:\\Users\\Shoaib_Khalid\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.1\\system.security.cryptography.protecteddata.9.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
