@@ -14,6 +14,8 @@ class TcpServer
     private int? MaxConnections;
     private SemaphoreSlim _connectionLimiter;
 
+     private static readonly RequestHandler _requestHandler = new RequestHandler();
+
     /**
     * Create a TcpServer instance , defaults to 10 number of connections if null is provided
     */
@@ -37,11 +39,9 @@ class TcpServer
         }
     }
 
-    private async Task HandleClientAsync(TcpClient client)
+    private static async Task HandleClientAsync(TcpClient client)
     {
-        await _connectionLimiter.WaitAsync(); // Limit concurrent clients
         Console.WriteLine($"Client connected: {client.Client.RemoteEndPoint}");
-
         NetworkStream stream = client.GetStream();
         byte[] buffer = new byte[1024];
 
@@ -50,14 +50,14 @@ class TcpServer
             while (true)
             {
                 int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length);
-                if (bytesRead == 0) break; // Client disconnected
+                if (bytesRead == 0) break;
 
-                string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-                Console.WriteLine($"Received: {message}");
+                string request = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                Console.WriteLine($"Received: {request}");
 
-                // Echo back the received message
-                byte[] response = Encoding.UTF8.GetBytes($"Echo: {message}");
-                await stream.WriteAsync(response, 0, response.Length);
+                string response = _requestHandler.ProcessRequest(request);
+                byte[] responseBytes = Encoding.UTF8.GetBytes(response);
+                await stream.WriteAsync(responseBytes, 0, responseBytes.Length);
             }
         }
         catch (Exception ex)
@@ -67,7 +67,6 @@ class TcpServer
         finally
         {
             client.Close();
-            _connectionLimiter.Release(); // Free up a connection slot
             Console.WriteLine("Client disconnected.");
         }
     }
