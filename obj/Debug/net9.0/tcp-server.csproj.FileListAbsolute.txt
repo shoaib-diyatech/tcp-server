@@ -1,0 +1,14 @@
+D:\Alachisoft work\tcp-server\bin\Debug\net9.0\tcp-server.exe
+D:\Alachisoft work\tcp-server\bin\Debug\net9.0\tcp-server.deps.json
+D:\Alachisoft work\tcp-server\bin\Debug\net9.0\tcp-server.runtimeconfig.json
+D:\Alachisoft work\tcp-server\bin\Debug\net9.0\tcp-server.dll
+D:\Alachisoft work\tcp-server\bin\Debug\net9.0\tcp-server.pdb
+D:\Alachisoft work\tcp-server\obj\Debug\net9.0\tcp-server.GeneratedMSBuildEditorConfig.editorconfig
+D:\Alachisoft work\tcp-server\obj\Debug\net9.0\tcp-server.AssemblyInfoInputs.cache
+D:\Alachisoft work\tcp-server\obj\Debug\net9.0\tcp-server.AssemblyInfo.cs
+D:\Alachisoft work\tcp-server\obj\Debug\net9.0\tcp-server.csproj.CoreCompileInputs.cache
+D:\Alachisoft work\tcp-server\obj\Debug\net9.0\tcp-server.dll
+D:\Alachisoft work\tcp-server\obj\Debug\net9.0\refint\tcp-server.dll
+D:\Alachisoft work\tcp-server\obj\Debug\net9.0\tcp-server.pdb
+D:\Alachisoft work\tcp-server\obj\Debug\net9.0\tcp-server.genruntimeconfig.cache
+D:\Alachisoft work\tcp-server\obj\Debug\net9.0\ref\tcp-server.dll
