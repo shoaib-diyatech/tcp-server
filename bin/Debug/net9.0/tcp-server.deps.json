@@ -8,10 +8,22 @@
     ".NETCoreApp,Version=v9.0": {
       "tcp-server/1.0.0": {
         "dependencies": {
-          "System.Configuration.ConfigurationManager": "9.0.1"
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "log4net": "3.0.3"
         },
         "runtime": {
           "tcp-server.dll": {}
+        }
+      },
+      "log4net/3.0.3": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "9.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/log4net.dll": {
+            "assemblyVersion": "3.0.3.0",
+            "fileVersion": "3.0.3.0"
+          }
         }
       },
       "System.Configuration.ConfigurationManager/9.0.1": {
@@ -63,6 +75,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "log4net/3.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LAZBO0rHo4DM56GIt124NaXKo6LVZcfiuWVgODdUnhPNMzTOlRJWOEIXo8zVNLm426B+coDc4ocfTsTw7R7Zeg==",
+      "path": "log4net/3.0.3",
+      "hashPath": "log4net.3.0.3.nupkg.sha512"
     },
     "System.Configuration.ConfigurationManager/9.0.1": {
       "type": "package",

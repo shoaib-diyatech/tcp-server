@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "log4net/3.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/log4net.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/log4net.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "System.Configuration.ConfigurationManager/9.0.1": {
         "type": "package",
         "dependencies": {
@@ -67,6 +83,25 @@
     }
   },
   "libraries": {
+    "log4net/3.0.3": {
+      "sha512": "LAZBO0rHo4DM56GIt124NaXKo6LVZcfiuWVgODdUnhPNMzTOlRJWOEIXo8zVNLm426B+coDc4ocfTsTw7R7Zeg==",
+      "type": "package",
+      "path": "log4net/3.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/log4net.dll",
+        "lib/net462/log4net.pdb",
+        "lib/net462/log4net.xml",
+        "lib/netstandard2.0/log4net.dll",
+        "lib/netstandard2.0/log4net.pdb",
+        "lib/netstandard2.0/log4net.xml",
+        "log4net.3.0.3.nupkg.sha512",
+        "log4net.nuspec",
+        "package-icon.png"
+      ]
+    },
     "System.Configuration.ConfigurationManager/9.0.1": {
       "sha512": "ntDQ+3A7vGq6jnv3KI8nv1Tfgmos9TG863xd/5tmms6LqrIxEze1RLuA3JB/AcpXMUSO70DXzXfPnJD2ZHFX0Q==",
       "type": "package",
@@ -166,7 +201,8 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "System.Configuration.ConfigurationManager >= 9.0.1"
+      "System.Configuration.ConfigurationManager >= 9.0.1",
+      "log4net >= 3.0.3"
     ]
   },
   "packageFolders": {
@@ -224,6 +260,10 @@
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
             "version": "[9.0.1, )"
+          },
+          "log4net": {
+            "target": "Package",
+            "version": "[3.0.3, )"
           }
         },
         "imports": [

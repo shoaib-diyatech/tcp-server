@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4KhiqGQS0Kk=",
+  "dgSpecHash": "oubMVRBZmdc=",
   "success": true,
   "projectFilePath": "D:\\Alachisoft work\\tcp-server\\tcp-server.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Shoaib_Khalid\\.nuget\\packages\\log4net\\3.0.3\\log4net.3.0.3.nupkg.sha512",
     "C:\\Users\\Shoaib_Khalid\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.1\\system.configuration.configurationmanager.9.0.1.nupkg.sha512",
     "C:\\Users\\Shoaib_Khalid\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.1\\system.diagnostics.eventlog.9.0.1.nupkg.sha512",
     "C:\\Users\\Shoaib_Khalid\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.1\\system.security.cryptography.protecteddata.9.0.1.nupkg.sha512"

@@ -21,3 +21,5 @@ D:\Alachisoft work\tcp-server\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Di
 D:\Alachisoft work\tcp-server\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.dll
 D:\Alachisoft work\tcp-server\obj\Debug\net9.0\tcp-server.csproj.AssemblyReference.cache
 D:\Alachisoft work\tcp-server\obj\Debug\net9.0\tcp-server.csproj.Up2Date
+D:\Alachisoft work\tcp-server\bin\Debug\net9.0\log4net.config
+D:\Alachisoft work\tcp-server\bin\Debug\net9.0\log4net.dll
