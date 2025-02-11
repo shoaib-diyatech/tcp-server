@@ -1,5 +1,9 @@
 # TCP Server - C# Console Application
 
+## [1.0.0] - 11-02-2025
+- Initial release, with commands
+
+
 ## Overview
 
 This is the first version of a TCP server implemented as a C# console application. The server listens for incoming TCP connections, receives requests, and echoes back whatever data is received. The port on which the server listens is configurable through the `app.config` file using the `port` property.
